@@ -1,0 +1,77 @@
+.FlipClock {
+    text-align: left;
+    display: flex;
+}
+
+.ClockCell {
+    font-family: 'Poppins';
+    position: relative;
+    width: 80px;
+    height: 90px;
+    background-color: #212120;
+    border-radius: 8px;
+    margin-right: 15px;
+    /* background-image: url("./images/cellBg.svg"); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    padding-top: 3px;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+
+}
+
+@media screen and (max-width: 980px) {
+    .ClockCell {
+        width: 48px !important;
+        height: 64px !important;
+        border-radius: 5px !important;
+        margin-right: 4px;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .ClockCell {
+        width: 55px;
+        height: 65px;
+    }
+}
+
+.base {
+    display: flex;
+    justify-content: center;
+}
+
+.ClockTitle {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 4px;
+    z-index: 10;
+    color: rgba(255, 255, 255, 0.6);
+    font-family: 'HarmonyOS Sans' !important;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+
+    @media screen and (max-width: 767px) {
+        font-size: 11px !important;
+        bottom: 1px !important;
+    }
+}
+
+.FlipClock .M-Flipper {
+    margin-right: 0px;
+}
+
+.FlipClock em {
+    display: inline-block;
+    line-height: 70px;
+    font-size: 50px;
+    font-style: normal;
+    vertical-align: top;
+    margin: 0 3px;
+}
